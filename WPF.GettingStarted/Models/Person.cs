@@ -4,7 +4,7 @@
     using System.Collections.Generic;
     using Catel.Data;
 
-    public class Person : ModelBase
+    public class Person : ValidatableModelBase
     {
         /// <summary>
         /// Gets or sets the first name.

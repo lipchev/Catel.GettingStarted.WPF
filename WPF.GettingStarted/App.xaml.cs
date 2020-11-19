@@ -23,7 +23,7 @@
             Catel.Logging.LogManager.AddDebugListener();
 #endif
 
-            StyleHelper.CreateStyleForwardersForDefaultStyles();
+            // StyleHelper.CreateStyleForwardersForDefaultStyles();
 
             var serviceLocator = ServiceLocator.Default;
             serviceLocator.RegisterType<IFamilyService, FamilyService>();

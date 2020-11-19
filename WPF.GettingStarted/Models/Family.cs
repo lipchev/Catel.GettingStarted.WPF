@@ -9,7 +9,7 @@ namespace WPF.GettingStarted.Models
     using System.Collections.ObjectModel;
     using Catel.Data;
 
-    public class Family : ModelBase
+    public class Family : ValidatableModelBase
     {
         /// <summary>
         /// Gets or sets the family name.

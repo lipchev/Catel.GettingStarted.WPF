@@ -9,6 +9,8 @@
     /// </summary>
     public partial class FamilyWindow : DataWindow
     {
+        private byte[] _retainedBytes = new byte[50 * 1024 * 1024];
+
         /// <summary>
         /// Initializes a new instance of the <see cref="FamilyWindow"/> class.
         /// </summary>

@@ -20,23 +20,23 @@
 
         public IEnumerable<Family> LoadFamilies()
         {
-            if (!File.Exists(_path))
+            // if (!File.Exists(_path))
             {
                 return new Family[] { };
             }
 
-            using (var fileStream = File.Open(_path, FileMode.Open))
-            {
-                var settings = Settings.Load(fileStream, SerializationMode.Xml);
-                return settings.Families;
-            }
+            // using (var fileStream = File.Open(_path, FileMode.Open))
+            // {
+            //     var settings = Settings.Load(fileStream, SerializationMode.Xml);
+            //     return settings.Families;
+            // }
         }
 
         public void SaveFamilies(IEnumerable<Family> families)
         {
-            var settings = new Settings();
-            settings.Families.ReplaceRange(families);
-            settings.Save(_path, SerializationMode.Xml);
+            // var settings = new Settings();
+            // settings.Families.ReplaceRange(families);
+            // settings.Save(_path, SerializationMode.Xml);
         }
     }
 }
